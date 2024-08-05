@@ -1,0 +1,9 @@
+{
+  "esversion": 6,
+  "asi": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "jQuery": true
+  }
+}

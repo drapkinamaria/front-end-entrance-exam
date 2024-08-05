@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/cvStyles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+  <title>CV</title>
+</head>
+<body>
+<div id="app">
+  <div class="background">
+    <div class="layer">
+      <div>
+        <img src="/images/profileImg.svg" alt="Profile Image">
+      </div>
+      <div class="about-me">
+        <div class="jobInfo-text" contenteditable="true" id="intro">Hello 👋🏻 I’m</div>
+        <div>
+          <div class="name" contenteditable="true" id="name">Karthik SR</div>
+          <div class="about-me-job-text" contenteditable="true" id="role">UX/UI Designer</div>
+        </div>
+      </div>
+      <div class="grayContainer material-wave">
+        <div class="title">Languages</div>
+        <div class="list-languages">
+          <div class="language">
+            <div class="language-container language-text">English</div>
+            <div class="language-level english"></div>
+          </div>
+          <div class="language">
+            <div class="language-container language-text">Malayalam</div>
+            <div class="language-level malayalam"></div>
+          </div>
+          <div class="language">
+            <div class="language-container language-text">Hindi</div>
+            <div class="language-level hindi"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="grayContainer">
+        <div class="title">Experience</div>
+        <div class="jobList">
+          <div class="job last">
+            <div class="years-text white-color">Jun. 2023 - Present</div>
+            <div class="jobContent">
+              <div class="jobInfo">
+                <div class="jobInfo-text white-color" contenteditable="true" id="jobTitle1">Marketing Manager</div>
+                <div class="profession-text white-color" contenteditable="true" id="jobCompany1">Pankayam | Full-time</div>
+              </div>
+              <div class="points white-color">
+                <ul>
+                  <li contenteditable="true" id="jobPoint1">Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+                  <li contenteditable="true" id="jobPoint2">Content Creation for Blogs, Website, Social media</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="job">
+            <div class="years-text">2017 - Present</div>
+            <div class="jobContent">
+              <div class="jobInfo">
+                <div class="jobInfo-text" contenteditable="true" id="jobTitle2">Graphic / Web designer</div>
+                <div class="profession-text" contenteditable="true" id="jobCompany2">Freelance</div>
+              </div>
+              <div class="points">
+                <ul>
+                  <li contenteditable="true" id="jobPoint3">Development of internal projects from scratch, product design of brands</li>
+                  <li contenteditable="true" id="jobPoint4">Landing page, webapps and hybrid apps</li>
+                  <li contenteditable="true" id="jobPoint5">Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="job">
+            <div class="years-text">Sep. 2021 - Jun. 2023</div>
+            <div class="jobContent">
+              <div class="jobInfo">
+                <div class="jobInfo-text" contenteditable="true" id="jobTitle3">Legal Assistant</div>
+                <div class="profession-text" contenteditable="true" id="jobCompany3">Law Firm | Intern</div>
+              </div>
+              <div class="points">
+                <ul>
+                  <li contenteditable id="jobPoint6">Provide administrative support to lawyer and enhance office effectiveness</li>
+                  <li contenteditable id="jobPoint7">Handle communication with clients, witnesses etc.</li>
+                  <li contenteditable id="jobPoint8">Prepare case briefs and summarize depositions, interrogatories and testimony</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tools">
+        <div class="title">Tools</div>
+        <div class="tools-container material-wave">
+          <img src="/icons/logoFigma.svg" alt="Figma" />
+          <img src="/icons/logoAdobePhotoshop.svg" alt="Photoshop" />
+          <img src="/icons/logoAdobeIllustrator.svg" alt="Illustrator" />
+          <img src="/icons/logoAdobePremiere.svg" alt="Premiere" />
+          <img src="/icons/logoNotion.svg" alt="Notion" />
+          <img src="/icons/logoMeet.svg" alt="Google Meet" />
+        </div>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="grayContainer">
+        <div class="title">Education</div>
+        <div class="education-content">
+          <div class="education-container last">
+            <div class="years-education-text white-color">2023</div>
+            <div>
+              <div class="jobInfo-text white-color" contenteditable="true" id="educationTitle1">UI/UX</div>
+              <div class="hashtag-container">
+                <div class="hashtag white-color">#UX</div>
+                <div class="hashtag white-color">#UI</div>
+                <div class="hashtag white-color">#research</div>
+                <div class="hashtag white-color">#DesignSystem</div>
+                <div class="hashtag white-color">#Ui</div>
+                <div class="hashtag white-color">#wireframing</div>
+                <div class="hashtag white-color">#figma</div>
+                <div class="hashtag white-color">#Ux</div>
+              </div>
+            </div>
+            <div class="education-place-text white-color">Coursera</div>
+          </div>
+          <div class="education-container">
+            <div class="years-education-text">2017 - 2022</div>
+            <div>
+              <div class="jobInfo-text" contenteditable="true" id="educationTitle2">Law</div>
+              <div class="hashtag-container">
+                <div class="hashtag green-color">#law</div>
+                <div class="hashtag green-color">#legalStudies</div>
+                <div class="hashtag green-color">#internationalLaws</div>
+              </div>
+            </div>
+            <div class="education-place-text">University of Kerala</div>
+          </div>
+          <div class="education-container">
+            <div class="years-education-text">2017</div>
+            <div>
+              <div class="jobInfo-text" contenteditable="true" id="educationTitle3">Graphic design</div>
+              <div class="hashtag-container">
+                <div class="hashtag green-color">#branding</div>
+                <div class="hashtag green-color">#web</div>
+                <div class="hashtag green-color">#illustration</div>
+                <div class="hashtag green-color">#adobe</div>
+              </div>
+            </div>
+            <div class="education-place-text">Coursera</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="grayContainer">
+          <div class="title">Interests</div>
+          <div class="interests">
+            <div class="interest-container interests-text">branding</div>
+            <div class="interest-container interests-text">design</div>
+            <div class="interest-container interests-text">photography</div>
+            <div class="interest-container interests-text">artificial intelligence</div>
+            <div class="interest-container interests-text">illustration</div>
+            <div class="interest-container interests-text">typography</div>
+            <div class="interest-container interests-text">social networks</div>
+            <div class="interest-container interests-text">research</div>
+            <div class="interest-container interests-text">drone pilot</div>
+            <div class="interest-container interests-text">games</div>
+          </div>
+        </div>
+        <div class="contact-container">
+          <div class="title white-color">Let's chat! I'm ready to work on exciting projects</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="downloadPdf">Скачать PDF</button>
+</div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
